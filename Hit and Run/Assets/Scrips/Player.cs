@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
 
     public bool Iniciar = false;
     public bool perdiste = false;
-
+    public bool Ganar = false;
     void Start()
     {
 
@@ -58,23 +58,26 @@ public class Player : MonoBehaviour
 
         if (!perdiste)
         {
-            if (Iniciar)
+            if (!Ganar)
             {
-
-                Direccion = 10;
-                if (VelocidadInicial <= 0f)
+                if (Iniciar)
                 {
-                    deltaM = 0.01f;
-                }
 
-                if (VelocidadInicial >= 1f)
-                {
-                    deltaM = 0;
-                }
+                    Direccion = 10;
+                    if (VelocidadInicial <= 0f)
+                    {
+                        deltaM = 0.01f;
+                    }
 
-                Rotate();
-                LlantasF.transform.Rotate(Vector3.Lerp(new Vector3(0, 0, 0), new Vector3(Direccion * Turbo * 65, 0, 0), VelocidadInicial) * Time.deltaTime);
-                LlantasA.transform.Rotate(Vector3.Lerp(new Vector3(0, 0, 0), new Vector3(Direccion * Turbo * 65, 0, 0), VelocidadInicial) * Time.deltaTime);
+                    if (VelocidadInicial >= 1f)
+                    {
+                        deltaM = 0;
+                    }
+
+                    Rotate();
+                    LlantasF.transform.Rotate(Vector3.Lerp(new Vector3(0, 0, 0), new Vector3(Direccion * Turbo * 65, 0, 0), VelocidadInicial) * Time.deltaTime);
+                    LlantasA.transform.Rotate(Vector3.Lerp(new Vector3(0, 0, 0), new Vector3(Direccion * Turbo * 65, 0, 0), VelocidadInicial) * Time.deltaTime);
+                }
             }
         }
 
@@ -139,6 +142,7 @@ public class Player : MonoBehaviour
     {
         Iniciar = false;
         perdiste = false;
+        Ganar = false;
 }
 
 }

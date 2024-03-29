@@ -31,7 +31,6 @@ public class Rafita : MonoBehaviour
             if (juego.puntos >= juego.puntos_Max)
             {
                 juego.txtpuntos.text = "WIN";
-                juego.btnLevel.gameObject.SetActive(true);
             }
         }
     }

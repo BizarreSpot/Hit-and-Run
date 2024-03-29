@@ -13,6 +13,7 @@ public class Collider_Auto : MonoBehaviour
         {
             Jugador.Iniciar = false;
             Jugador.perdiste = true;
+            Jugador.Ganar = false;
         }
     }
 }

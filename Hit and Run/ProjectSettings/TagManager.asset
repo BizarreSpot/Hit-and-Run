@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Jugador
   - Pared
+  - Garaje
   layers:
   - Default
   - TransparentFX

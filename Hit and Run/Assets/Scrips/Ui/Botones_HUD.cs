@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Botones_HUD : MonoBehaviour
 {
@@ -9,19 +10,13 @@ public class Botones_HUD : MonoBehaviour
     public GameObject Punto_Reaparicion;
 
     public Player reinicio;
-    void Start()
-    {
-        
-    }
 
-    void Update()
+    public void Debug_Nivel()
     {
-        
+        SceneManager.LoadScene("Debug");
     }
-
     public void reposicion()
     {
-        print("xd");
         reinicio.reinicio();
         Jugador.transform.position = Punto_Reaparicion.transform.position;
         Jugador.transform.rotation = Punto_Reaparicion.transform.rotation;
