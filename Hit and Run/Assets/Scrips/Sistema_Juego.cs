@@ -54,7 +54,7 @@ public class Sistema_Juego : MonoBehaviour
             }
             else if (puntos == puntos_Max)
             {
-
+                tiempo_delta = 0;
                 Repetir_Nivel.gameObject.SetActive(true);
                 btnReload.gameObject.SetActive(false);
             }
