@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44295257, g: 0.48538774, b: 0.5355328, a: 1}
+  m_IndirectSpecularColor: {r: 0.44295302, g: 0.48538882, b: 0.5355337, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -207,12 +207,12 @@ PrefabInstance:
     - target: {fileID: 228671084829578408, guid: 586803c05339ce947b9280eaf0a47470,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.24242955
+      value: -0.24242952
       objectReference: {fileID: 0}
     - target: {fileID: 228671084829578408, guid: 586803c05339ce947b9280eaf0a47470,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.04176441
+      value: -0.04176438
       objectReference: {fileID: 0}
     - target: {fileID: 228671084829578408, guid: 586803c05339ce947b9280eaf0a47470,
         type: 3}
@@ -292,6 +292,11 @@ PrefabInstance:
     - target: {fileID: 5462974606892479108, guid: 586803c05339ce947b9280eaf0a47470,
         type: 3}
       propertyPath: NivelActual
+      value: LVl2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462974606892479108, guid: 586803c05339ce947b9280eaf0a47470,
+        type: 3}
+      propertyPath: SiguienteNivel
       value: LVl2
       objectReference: {fileID: 0}
     - target: {fileID: 6328418094410969254, guid: 586803c05339ce947b9280eaf0a47470,

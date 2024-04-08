@@ -1,8 +1,12 @@
 Win64
 PlayerPath?
-C:/Users/alesp/Downloads/Test/Hit and Run.exe
+C:/Users/alesp/Downloads/Tsst2/Hit and Run.exe
 SceneListBegin?
-Assets/Scenes/Debug.unity
+Assets/Scenes/MenuP.unity
+Assets/Scenes/Instrucciones.unity
+Assets/Scenes/Lvl1.unity
+Assets/Scenes/Lvl2.unity
+Assets/Scenes/Lvl3.unity
 SceneListEnd?
 23d669c8bf2983ca4a3df160658318a6 Cinemachine.dll:Cinemachine.CinemachineStateDrivenCamera
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -107,7 +111,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-0b5841599af139c68e07c39dc4e25e0f Assembly-CSharp.dll:.Rafita
+71d06b0c7866c7c5891ca5ef4daea147 Assembly-CSharp.dll:.Rafita
 4e9333594897a1fb8b136ad2eae996c7 Unity.TextMeshPro.dll:TMPro.TMP_SubMeshUI
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -142,7 +146,7 @@ bd543bad7f9f6262f10595aadb130d22 Cinemachine.dll:Cinemachine.CinemachineComposer
 694d20920c0e41f567e119f7159a3644 Cinemachine.dll:Cinemachine.CinemachinePath
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 56df1fa7cea034df9863fe5a24200a32 Cinemachine.dll:Cinemachine.CinemachineTargetGroup
-7af789c70b0e4feb4cd5491b4ad2cee0 Assembly-CSharp.dll:.Sistema_Juego
+d126ef6b697f1f4bf79d6cd61faa0d2a Assembly-CSharp.dll:.Sistema_Juego
 7c792393fb82488bd20139dcc5ba26d8 Cinemachine.dll:Cinemachine.CinemachineTransposer
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -165,7 +169,7 @@ e6d75f1a9bc0c6f7085df0baa077e688 Cinemachine.dll:Cinemachine.CinemachineGroupCom
 b639d97cb780d0d99a2bfb3ad1935732 Cinemachine.dll:Cinemachine.CinemachineMixingCamera
 a9f049c3dc82bb36fdb142e4d6a2658d Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 c4117cf32d2e7797e9e05272a419cd6e Cinemachine.dll:Cinemachine.Timeline.CinemachineShot
-6a9d2edd1999f338244e345aecb11ea2 Assembly-CSharp.dll:.Botones_HUD
+aad44537346cd74b095f8dfe26d7ef19 Assembly-CSharp.dll:.Botones_HUD
 e1300922cc039f41ab46a47f4cb05898 Unity.TextMeshPro.dll:TMPro.TMP_Settings
 df21ffd1864551a3e43410f28754a73e Cinemachine.dll:Cinemachine.CinemachineConfiner
 1e3d6222ff533d213aab144eb854a53b Cinemachine.dll:.CinemachineTouchInputMapper

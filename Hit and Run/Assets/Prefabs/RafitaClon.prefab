@@ -896,7 +896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce5fa73b767bce4a977a57e1ef60a70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  danger: {fileID: 8300000, guid: 9f446e891fb3ea5458b223529400945f, type: 3}
+  rafa: {fileID: 8300000, guid: 9f446e891fb3ea5458b223529400945f, type: 3}
   juego: {fileID: 0}
   rafita_Ragdoll: {fileID: 5428488134878893874}
   Collider_Puntos: {fileID: 5428488135526644433}
@@ -920,12 +920,12 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 2.8922157
+  MaxDistance: 503.73
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
-  BypassListenerEffects: 1
+  BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
