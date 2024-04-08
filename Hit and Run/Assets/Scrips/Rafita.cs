@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Rafita : MonoBehaviour
 {
+
+    private AudioSource audios;
+    [SerializeField] private AudioClip danger;
+
     public Sistema_Juego juego;
     public Ragdolls rafita_Ragdoll;
     public GameObject Collider_Puntos;
@@ -26,7 +30,8 @@ public class Rafita : MonoBehaviour
             rafita_Ragdoll.colicion_Rafita = true;
             Collider_Puntos.SetActive(false);
             juego.puntos++;
-            juego.txtpuntos.text = juego.puntos_Max + "/" + juego.puntos.ToString() + "¡Vuelve a tu casa sin chocar!";
+            juego.txtpuntos.text = juego.puntos_Max + "/" + juego.puntos.ToString();
+            audios.PlayOneShot(danger);
 
         }
 
@@ -35,5 +40,4 @@ public class Rafita : MonoBehaviour
  juego.Regresa.gameObject.SetActive(true);
         }
     }
-
 }
