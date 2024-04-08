@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
     private float deltaM = .01f;
     private float VelocidadInicial = 0f;
 

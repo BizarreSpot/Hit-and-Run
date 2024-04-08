@@ -30,6 +30,7 @@ public class Rafita : MonoBehaviour
             juego.txtpuntos.text = juego.puntos_Max + "/" + juego.puntos.ToString(); ;
             if (juego.puntos >= juego.puntos_Max)
             {
+                juego.Pantalla_Ganar.SetActive(true);
                 juego.txtpuntos.text = "WIN";
             }
         }

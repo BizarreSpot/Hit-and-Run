@@ -8,6 +8,8 @@ public class Sistema_Juego : MonoBehaviour
     public Player Juego;
 
     public GameObject Pantalla_Ganar;
+    public GameObject Pantalla_Perder;
+
     public Button btnReload;
     public Button Repetir_Nivel;
     public Text txtpuntos;
@@ -16,6 +18,7 @@ public class Sistema_Juego : MonoBehaviour
     public Text txtTiempo;
 
     public int puntos_Max;
+    public bool menus = false;
     public bool ganar = false;
     public int puntos;
 
@@ -26,57 +29,65 @@ public class Sistema_Juego : MonoBehaviour
         btnReload.gameObject.SetActive(false);
         Repetir_Nivel.gameObject.SetActive(false);
         Pantalla_Ganar.SetActive(false);
+        Pantalla_Perder.SetActive(false);
         tiempo_delta = 1;
 }
 
 
     void Update()
     {
-
-        reloj -= Time.deltaTime*tiempo_delta;
-        if (reloj <= 0f)
-        {
-            reloj = 0.0f;
-            Juego.perdiste = true;
-
+        if (menus == true) {
+            Pantalla_Ganar.SetActive(true);
         }
+
+        else {
+
+            reloj -= Time.deltaTime * tiempo_delta;
+            if (reloj <= 0f)
+            {
+                reloj = 0.0f;
+                Juego.perdiste = true;
+
+            }
 
             txtTiempo.text = "Tiempo: " + reloj.ToString("F2");
 
-        if (Juego.perdiste)
-        {
-
-            if (reloj <= 0f)
+            if (Juego.perdiste && ganar == false)
             {
-
-                Repetir_Nivel.gameObject.SetActive(true);
-                btnReload.gameObject.SetActive(false);
+                if (reloj <= 0f)
+                {
+                    Pantalla_Perder.SetActive(true);
+                    Repetir_Nivel.gameObject.SetActive(true);
+                    btnReload.gameObject.SetActive(false);
+                }
+                else if (puntos == puntos_Max)
+                {
+                    Pantalla_Perder.SetActive(true);
+                    tiempo_delta = 0;
+                    Repetir_Nivel.gameObject.SetActive(true);
+                    btnReload.gameObject.SetActive(false);
+                }
+                else if (puntos <= puntos_Max - 1)
+                {
+                    //Pantalla_Perder.SetActive(true);
+                    print("chocar");
+                    btnReload.gameObject.SetActive(true);
+                    Repetir_Nivel.gameObject.SetActive(false);
+                }
             }
-            else if (puntos == puntos_Max)
+            else if (!Juego.perdiste && reloj >= 0f)
             {
-                tiempo_delta = 0;
-                Repetir_Nivel.gameObject.SetActive(true);
                 btnReload.gameObject.SetActive(false);
-            }
-            else if (puntos <= puntos_Max - 1)
-            {
-                print("chocar");
-                btnReload.gameObject.SetActive(true);
                 Repetir_Nivel.gameObject.SetActive(false);
-            }
-        }
-        else if (!Juego.perdiste && reloj >= 0f)
-        {
-            btnReload.gameObject.SetActive(false);
-            Repetir_Nivel.gameObject.SetActive(false);
 
-            if (puntos == puntos_Max)
-            {
-                ganar = true;
-            }
+                if (puntos == puntos_Max)
+                {
+                    Pantalla_Perder.SetActive(false);
+                    ganar = true;
+                }
 
+            }
         }
     }
-
 }
 
