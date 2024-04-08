@@ -25,14 +25,14 @@ public class Rafita : MonoBehaviour
         {
             rafita_Ragdoll.colicion_Rafita = true;
             Collider_Puntos.SetActive(false);
-            print("choco");
             juego.puntos++;
-            juego.txtpuntos.text = juego.puntos_Max + "/" + juego.puntos.ToString(); ;
-            if (juego.puntos >= juego.puntos_Max)
-            {
-                juego.Pantalla_Ganar.SetActive(true);
-                juego.txtpuntos.text = "WIN";
-            }
+            juego.txtpuntos.text = juego.puntos_Max + "/" + juego.puntos.ToString() + "¡Vuelve a tu casa sin chocar!";
+
+        }
+
+        if (juego.puntos >= juego.puntos_Max)
+        {
+ juego.Regresa.gameObject.SetActive(true);
         }
     }
 

@@ -17,6 +17,7 @@ public class Garaje : MonoBehaviour
                 Jugador_Estado.Ganar = true;
                 Jugador_Estado.Iniciar = false;
                 Juego_Estado.Pantalla_Ganar.SetActive(true);
+                Juego_Estado.Regresa.gameObject.SetActive(false);
             }
         }
     }
